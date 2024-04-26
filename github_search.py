@@ -75,7 +75,9 @@ if response.status_code == 200:
             print("extracted dir: ", extracted_directory)
             project_dir = f'{current_directory}\\{project_name}\\{extracted_directory}\\'
 
-            command = f"java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar {project_dir} false 0 false '{project_name}' 'build/' 'temp/' "
+            # project dir has to be an absolute path (doesn't seem to be one)
+            print("project directory in python script; ", project_dir)
+            command = f"java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar {project_dir} false 0 false {project_dir} 'build/' 'temp/' "
             directory = r"C:\Users\maaik\OneDrive\Dokumente\Uni\Semester 6\ESE Seminar\ck\target"
 
             # Change directory and execute the command
