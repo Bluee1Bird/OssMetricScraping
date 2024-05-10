@@ -42,8 +42,14 @@ import subprocess
 #     # print("extract info;", project_extract_info)
 
 #manually selected projects
-projects = [["lbry-android","https://github.com/lbryio/lbry-android", "master"], ["GeometricWeather", "https://github.com/WangDaYeeeeee/GeometricWeather", "master"], ["talon-for-twitter-android", "https://github.com/klinker24/talon-for-twitter-android", "master"], ["lawnchair", "https://github.com/LawnchairLauncher/lawnchair", "14-dev"], ["litho", "https://github.com/facebook/litho", "master"], ["PictureSelector", "https://github.com/LuckSiege/PictureSelector", "version_component"], ["SmarterStreaming", "https://github.com/daniulive/SmarterStreaming", "master"] ]
-
+#projects = [["lbry-android","https://github.com/lbryio/lbry-android", "master"], ["GeometricWeather", "https://github.com/WangDaYeeeeee/GeometricWeather", "master"], ["talon-for-twitter-android", "https://github.com/klinker24/talon-for-twitter-android", "master"], ["lawnchair", "https://github.com/LawnchairLauncher/lawnchair", "14-dev"], ["litho", "https://github.com/facebook/litho", "master"], ["PictureSelector", "https://github.com/LuckSiege/PictureSelector", "version_component"], ["SmarterStreaming", "https://github.com/daniulive/SmarterStreaming", "master"] ]
+#projects = [["lucida", "https://github.com/claritylab/lucida", "master"]]
+#projects = [["phimpme-android", "https://github.com/fossasia/phimpme-android", "development"]]
+#projects = [["h2o-2", "https://github.com/h2oai/h2o-2", "master"]]
+#projects = [["anonymouth", "https://github.com/psal/anonymouth", "master"]]
+#projects = [["word", "https://github.com/ysc/word", "master"]]
+#projects = [["beam", "https://github.com/apache/beam", "master"]]
+projects = [["PojavLauncher", "https://github.com/PojavLauncherTeam/PojavLauncher", "v3_openjdk"], ["hudi","https://github.com/apache/hudi", "master"], ["NekoX", "https://github.com/NekoX-Dev/NekoX", "main"]]
 
 # download the source code for every repo
 #for project in project_extract_info.values():
@@ -77,6 +83,9 @@ for project in projects:
 
         # figure out the exact path of the extracted file
         dirs = os.listdir(path=f'{project_name}')
+        print("directories in there; ", dirs)
+        print("list comprehension result ", [dir for dir in dirs if f"{project_name}" in dir])
+
         extracted_directory = [dir for dir in dirs if f"{project_name}" in dir][0]
         current_directory = os.getcwd()
         print("extracted dir: ", extracted_directory)
