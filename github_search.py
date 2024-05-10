@@ -41,15 +41,20 @@ import subprocess
 #         project_extract_info[item["name"]] = [item["name"], item["url"], item["default_branch"]]
 #     # print("extract info;", project_extract_info)
 
-#manually selected projects
-#projects = [["lbry-android","https://github.com/lbryio/lbry-android", "master"], ["GeometricWeather", "https://github.com/WangDaYeeeeee/GeometricWeather", "master"], ["talon-for-twitter-android", "https://github.com/klinker24/talon-for-twitter-android", "master"], ["lawnchair", "https://github.com/LawnchairLauncher/lawnchair", "14-dev"], ["litho", "https://github.com/facebook/litho", "master"], ["PictureSelector", "https://github.com/LuckSiege/PictureSelector", "version_component"], ["SmarterStreaming", "https://github.com/daniulive/SmarterStreaming", "master"] ]
-#projects = [["lucida", "https://github.com/claritylab/lucida", "master"]]
-#projects = [["phimpme-android", "https://github.com/fossasia/phimpme-android", "development"]]
-#projects = [["h2o-2", "https://github.com/h2oai/h2o-2", "master"]]
-#projects = [["anonymouth", "https://github.com/psal/anonymouth", "master"]]
-#projects = [["word", "https://github.com/ysc/word", "master"]]
-#projects = [["beam", "https://github.com/apache/beam", "master"]]
-projects = [["PojavLauncher", "https://github.com/PojavLauncherTeam/PojavLauncher", "v3_openjdk"], ["hudi","https://github.com/apache/hudi", "master"], ["NekoX", "https://github.com/NekoX-Dev/NekoX", "main"]]
+# manually selected projects projects = [["lbry-android","https://github.com/lbryio/lbry-android", "master"],
+# ["GeometricWeather", "https://github.com/WangDaYeeeeee/GeometricWeather", "master"], ["talon-for-twitter-android",
+# "https://github.com/klinker24/talon-for-twitter-android", "master"], ["lawnchair",
+# "https://github.com/LawnchairLauncher/lawnchair", "14-dev"], ["litho", "https://github.com/facebook/litho",
+# "master"], ["PictureSelector", "https://github.com/LuckSiege/PictureSelector", "version_component"],
+# ["SmarterStreaming", "https://github.com/daniulive/SmarterStreaming", "master"] ] projects = [["lucida",
+# "https://github.com/claritylab/lucida", "master"]] projects = [["phimpme-android",
+# "https://github.com/fossasia/phimpme-android", "development"]] projects = [["h2o-2",
+# "https://github.com/h2oai/h2o-2", "master"]] projects = [["anonymouth", "https://github.com/psal/anonymouth",
+# "master"]] projects = [["word", "https://github.com/ysc/word", "master"]] projects = [["beam",
+# "https://github.com/apache/beam", "master"]] projects = [["PojavLauncher",
+# "https://github.com/PojavLauncherTeam/PojavLauncher", "v3_openjdk"], ["hudi","https://github.com/apache/hudi",
+# "master"], ["NekoX", "https://github.com/NekoX-Dev/NekoX", "main"]]
+projects = [["Arduino", "https://github.com/arduino/Arduino", "master"]]
 
 # download the source code for every repo
 #for project in project_extract_info.values():
